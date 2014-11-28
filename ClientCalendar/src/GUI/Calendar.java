@@ -29,14 +29,23 @@ public class Calendar extends JFrame{
 			welcome.setBounds(344,6,392,160);
 			panel.add(welcome);
 			
+			addCalendar.setBounds(300, 4, 390, 150);
+			panel.add(addCalendar);
+			
+			addEvent.setBounds(300, 4, 390, 150);
+			panel.add(addEvent);
+			
+			addNote.setBounds(300, 4, 390, 150);
+			panel.add(addNote);
+			
+			share.setBounds(300, 4, 390, 150);
+			panel.add(share);
+			
 			getContentPane().add(panel);
 			setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			setVisible(true);
 			
-			getContentPane().add(addCalendar);
-			getContentPane().add(addEvent);
-			getContentPane().add(addNote);
-			getContentPane().add(share);
+
 			
 		}
 	
