@@ -11,6 +11,10 @@ public class Calendar extends JFrame{
 	}
 		JLabel welcome = new JLabel("Welcome to CBS Calendar");
 		JPanel panel = new JPanel();
+		JButton addCalendar = new JButton("Add Calendar");
+		JButton addEvent = new JButton("Add Event");
+		JButton addNote = new JButton("Add Note");
+		JButton share = new JButton("Share...");
 		
 		Calendar(){
 			super("CBS Calendar");
@@ -28,6 +32,11 @@ public class Calendar extends JFrame{
 			getContentPane().add(panel);
 			setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			setVisible(true);
+			
+			getContentPane().add(addCalendar);
+			getContentPane().add(addEvent);
+			getContentPane().add(addNote);
+			getContentPane().add(share);
 			
 		}
 	
