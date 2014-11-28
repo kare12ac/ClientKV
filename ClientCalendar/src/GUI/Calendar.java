@@ -26,19 +26,23 @@ public class Calendar extends JFrame{
 			welcome.setForeground(SystemColor.textHighlight);
 			welcome.setFont(new Font("Apple Braille", Font.PLAIN, 28));
 			
-			welcome.setBounds(344,6,392,160);
+			welcome.setBounds(310,-3,392,160);
 			panel.add(welcome);
 			
-			addCalendar.setBounds(300, 4, 390, 150);
+			addCalendar.setBounds(25, 142, 105, 47);
 			panel.add(addCalendar);
 			
-			addEvent.setBounds(300, 4, 390, 150);
+			addEvent.setBounds(25, 201, 105, 39);
 			panel.add(addEvent);
+			addNote.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent arg0) {
+				}
+			});
 			
-			addNote.setBounds(300, 4, 390, 150);
+			addNote.setBounds(25, 252, 105, 39);
 			panel.add(addNote);
 			
-			share.setBounds(300, 4, 390, 150);
+			share.setBounds(25, 303, 105, 39);
 			panel.add(share);
 			
 			getContentPane().add(panel);
