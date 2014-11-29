@@ -29,29 +29,48 @@ public class Calendar extends JFrame{
 			welcome.setBounds(310,-3,392,160);
 			panel.add(welcome);
 			
-			addCalendar.setBounds(25, 142, 105, 47);
+			addCalendar.setBounds(25, 140, 105, 39);
 			panel.add(addCalendar);
 			
-			addEvent.setBounds(25, 201, 105, 39);
+			addEvent.setBounds(25, 200, 105, 39);
 			panel.add(addEvent);
-			addNote.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent arg0) {
-				}
-			});
 			
-			addNote.setBounds(25, 252, 105, 39);
+			
+			addNote.setBounds(25, 260, 105, 39);
 			panel.add(addNote);
 			
-			share.setBounds(25, 303, 105, 39);
+			share.setBounds(25, 320, 105, 39);
 			panel.add(share);
 			
 			getContentPane().add(panel);
 			setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			setVisible(true);
 			
-
+//			actionCalendar action = new actionCalendar();
+//			addCalendar.addActionListener(action);
+//			addEvent.addActionListener(action);
+//			addNote.addActionListener(action);
+//			share.addActionListener(action);
 			
 		}
 	
-	
+		public void actionPerformed(ActionEvent event){
+			addCalendar.addActionListener(new ActionListener(){
+				public void actionPerformed(ActionEvent event){
+			JOptionPane.showMessageDialog(null, "Wrong Password or Username");
+					}
+			});
+		}
+
 }
+
+
+		
+
+
+		
+			
+		
+			
+	
+
