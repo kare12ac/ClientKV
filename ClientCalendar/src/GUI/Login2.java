@@ -1,16 +1,20 @@
 package GUI;
-
 import javax.swing.*;
 
 import com.google.gson.Gson;
 
-import shared.LogInObject;
-import shared.LogInReturnObject;
+import JsonClasses.AuthUser;
+//import shared.LogInObject;
+//import shared.LogInReturnObject;
+
+
 
 import java.awt.*;
 import java.awt.event.*;
 
 import logic.ServerConnection;
+
+//import logic.ServerConnection;
 
 
 
@@ -57,10 +61,10 @@ public class Login2  extends JFrame{
 					public void actionPerformed(ActionEvent event){
 						String uname = txtUser.getText();
 						String pword = password.getText();
-						LogInObject login = new LogInObject();
-						login.setAuthUsername(uname);
-						login.setAuthPassword(pword);
-						login.setIsAdmin(false);
+						AuthUser login = new AuthUser();
+						login.setAuthUserEmail(uname);
+						login.setAuthUserPassword(pword);
+						login.setAuthUserIsAdmin(false);
 						Gson gson = new Gson();
 						String jsonString = gson.toJson(login);
 						ServerConnection connection = new ServerConnection();
